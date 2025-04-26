@@ -1,0 +1,55 @@
+# SUBMISSION
+
+**Assignment: 17.hw** 
+
+## OVERVIEW
+
+Read the instructions in the `INSTRUCTIONS` document before answering
+the questions below. You are **only to add content in this document
+where it is explicitly specified**. In particular, any text that is
+surrounded by `[[` and `]]`, you are to replace with your answer.
+
+## MICROSERVICE OVERVIEW
+
+[[In <= 200 words, describe what your microservice does and which
+other microservice does your microservice communicate with. Use proper
+grammatical structure and correct spelling.]]
+
+## MICROSERVICE CODE
+
+```bash
+[[Paste the code of your microservice here. Your code must be
+formatted correctly in order to count for full points. Make sure you
+replace the language specification for this code block according to
+the programming language you used. This is currently specified as
+bash. Please replace it.]]
+```
+
+## API GATEWAY
+
+```typescript
+[[Paste the code you added to the api-gateway service. Make sure that
+code is formatted correctly in order to count for full points.]]
+```
+
+## DOCKER-COMPOSE.YML
+
+```typescript
+[[Paste the additions you made to `docker-compose.yml` to include your
+service in the overall system.]]
+```
+## OUTPUT
+
+[[Paste the output from sending a message to http://api-gateway:3000
+(or http://localhost:3000 as it is mapped to the api-gateway service.)]]
+
+## OUTPUT EXPLAINED
+
+[[In <= 100 words, explain the output of the request to your service.
+Note, this doesn't need to be deep since you can invent whatever data 
+you would like!]]
+
+## REFLECTION
+
+[[In <= 200 words, explain what you learned in this assignment. Use
+proper grammatical structure and correct spelling.]]

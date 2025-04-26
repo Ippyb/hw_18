@@ -1,0 +1,58 @@
+# 18.HW INSTRUCTIONS
+
+## OVERVIEW
+
+This assignment is based on the material from lecture 17 and 18. It
+focuses on creating a new microservice that communicates to another
+microservice and also receives incoming requests. You will also need
+to modify the `api-gateway` service to forward requests from the
+outside world to your new service. Lastly, you need to create a
+`Dockerfile` and `Dockerfile.dev` to build an image for your
+microservice and add an entry into the `docker-compose.yml` file to
+have your service "boot up" with the rest of the system.
+
+## MATERIAL
+
+You are provided with the following material:
+
+- `ms-arch`: a folder containing the starting reference architecture
+covered in lecture 18.
+- `SUBMISSION`: a markdown file template that you need to fill in and
+  submit to Gradescope.
+
+## TASKS
+
+1. **Create a new microservice**. The new microservice must be called 
+   `service-18` in a language of your choice. The microservice
+   must have the following:
+
+   A. **A route to receive data** (your choice of what that is).
+      This route must do something interesting with that data and
+      combine data returned from another existing route. The response
+      must be a JSON object. If there is an error, an appropriate
+      error response object must be returned with a sensible HTTP
+      status code.
+   B. **A `Dockerfile`** to build an image for the service.
+   C. **A `Dockerfile.dev`** to build a development image for the
+      service.
+   D. **Modify the `api-gateway` to forward requests to your new
+   service. The route should be `/18`.
+   E. Fill out `SUBMISSION` with answers to the questions within.
+
+2. **Submit to Gradescope**. The only file you need to submit to
+   Gradescope is `SUBMISSION`. Your submission will be evaluated by an
+   auto-grader and also manually reviewed.
+
+## ADDITIONAL
+
+If you are interested in exploring further. Create a second service
+that your service talks to. That second service can do anything you
+would like, but it must return a response containing data.
+
+Another option is to have your service communicate to a service
+running `redis` or `postgresql`. Have your service store data in one
+of those services.
+
+To go even further, have the `redis` or `postgresql` service store its
+data persistently on the host machine (i.e., your computer). This will
+allow the data to be persistent across container shutdowns.
